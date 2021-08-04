@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User test</title>
+</head>
+<style>
+    .user .photo{
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background: url('{{ photo }}');
+    }
+    .user .user-name{
+        font-size: 20pt;
+        color: black;
+    }
+
+</style>
+<body>
+    <div class="user">
+        <div class="photo">
+        </div>
+        <div class="user-name">
+            <p class="name">Nome: {{username}}</p>
+        </div>
+    </div>
+</body>
+</html>

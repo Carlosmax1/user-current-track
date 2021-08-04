@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current song</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<style>
+    .current-track{
+
+        background: url('{{ album_image }}');
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: 100%;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+    }
+
+    .user .foto{
+        background: url('{{ photo }}');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+</style>
+<body class="current-track">
+    {% if response %}
+    <div class="container">
+        <div class="box">
+            <div class="album-picture">
+                <img class="capa" src="{{ album_image }}" />
+            </div>
+            <div class="song-info">
+                <p class="song-name">Nome: {{ name }}</p>
+                <p class="song-album">Album: {{ album }}</p>
+                <a class="icon-sp" href="#"><i class="fab fa-spotify fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="user">
+        <div class="foto">
+        </div>
+        <div class="user-nome">
+            <p class="nome">{{ username }}</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copy">
+            <p class="text-footer">&copy; Desenvolvido por <a target="_blank" href="https://github.com/Carlosmax1">Carlos</a></p>
+        </div>
+    </footer>
+    {% else %}
+    <body style="background: #201f1f;">
+    <div class="container2">
+        <div class="box2">
+            <header class="cabecalho">
+                <span class="icon-sp2"><i class="fab fa-spotify fa-7x"></i></span>
+                <h1 class="titulo">Currently Playing Track</h1>
+                <p class="infos">Veja qual música está tocando agora no seu Spotify agora!</p>
+            </header>
+            <form class="formulario" method="POST" action="{% url 'index' %}">
+                {% csrf_token %}
+                <input class="inp" name="token" id="token" type="text" required placeholder="Token">
+                <input class="inp" name="clientid" id="clientid" type="text" required placeholder="Client ID">
+                <input class="inp" name="secrectid" id="secrectid" type="text" required placeholder="Client Secret ID">
+                <input class="inp" name="spid" id="spid" type="text" required placeholder="Spotify ID">
+                <input class="botao-enviar" type="submit" value="Enviar"> 
+            </form>
+        </div>
+    </div>
+    <footer class="rodape">
+        <div class="copy2">
+            <p class="text-footer">&copy; Desenvolvido por <a target="_blank" href="https://github.com/Carlosmax1">Carlos</a></p>
+        </div>
+    </footer>
+    {% endif %}
+    </body>
+</body>
+</html>

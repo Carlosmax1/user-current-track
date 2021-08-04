@@ -1,0 +1,169 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0,90%);
+}
+
+.container .box{
+    width: 669px;
+    height: 200px;
+    background: #111111;
+}
+
+.album-picture{
+    margin: 1em;
+    width: 150px;
+    height: 150px;
+}
+
+.capa{
+    width: 150px;
+    height: 150px;
+}
+
+.song-info{
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    margin: 1em;
+    transform: translate(27%, -180%);
+}
+
+.icon-sp{
+    color: white;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    transform: translate(400%, -380%);
+}
+
+.user .foto{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.user .user-nome .nome{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.footer{
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 9em;
+}
+
+.text-footer{
+    color: white; 
+    font-style: italic;
+}
+
+.text-footer > a{
+    outline: none;
+    color: green;
+}
+
+.box2{
+    margin-top: 1em;
+    width: 665px;
+    height: 95vh;
+    background: #111111;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.formulario .inp{
+    margin: 0.5em;
+    width: 100%;
+    border-radius: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho .icon-sp2{
+    margin: 1em;
+    color: #1ED760;
+}
+
+.cabecalho .titulo{
+    font-family: 'Tajawal', sans-serif;
+    color: #d1d1d1;
+}
+
+.cabecalho .infos{
+    font-family: 'Tajawal', sans-serif;
+    color: #d1d1d1;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+}
+
+.formulario .botao-enviar{
+    margin: 1em;
+    cursor: pointer;
+    width: 179px;
+    font-family: 'Tajawal', sans-serif;
+    background: #1ED760;
+    height: 61px;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+.formulario .botao-enviar:hover{
+    margin: 1em;
+    cursor: pointer;
+    width: 179px;
+    font-family: 'Tajawal', sans-serif;
+    background: #1ED760;
+    height: 61px;
+    color: black;
+    font-weight: 600;
+    border: none;
+    transform: scale(1.05);
+    border-radius: 100px;
+    transition: 1s;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

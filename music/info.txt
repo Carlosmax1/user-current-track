@@ -1,0 +1,12 @@
+SET SPOTIPY_CLIENT_ID='6b318cfc7f5e412c8b18a9d0408eaf8b'        
+SET SPOTIPY_CLIENT_SECRET='579011efdd9f49a2ab362e7175c9f357'
+SET SPOTIPY_REDIRECT_URI='http://localhost:8888/callback'
+
+6b318cfc7f5e412c8b18a9d0408eaf8b:579011efdd9f49a2ab362e7175c9f357
+
+https://accounts.spotify.com/authorize?client_id=6b318cfc7f5e412c8b18a9d0408eaf8b&response_type=code&redirect_uri=https%3A%2F%2Fcarlosmax1.github.io%2Fprimeirosite%2F
+
+curl -H "Authorization: Basic NmIzMThjZmM3ZjVlNDEyYzhiMThhOWQwNDA4ZWFmOGI6NTc5MDExZWZkZDlmNDlhMmFiMzYyZTcxNzVjOWYzNTc=" -d grant_type=authorization_code -d code=AQCY0-e5UyhqWHYv7O2a5LF-HNsH0WMFF8YHonGbWpvjBlOE-2fP9lPAuvPsmZEMWryIgx_0cFKLiB04zb3Y3BzAlSOQWK9xvNBHrsOyZAqcCupyVLigOWd9cDwEAZqm_rFDNYJX9vYcVCBkT8FePOvnS-hDtt-d1vfYoLlqFOT_Q-yGSnrLCZ3cO1KkxA -d redirect_uri=https%3A%2F%2Fcarlosmax1.github.io%2Fprimeirosite%2F https://accounts.spotify.com/api/token
+
+
+"BQBqqrKaroKMHqkDraHz6ESCxcfQqoCTt-h7Q3Lki77jx0RLsLILo_Bzb3mi2T8YwZoJiICxcVdyAmeG8_wG4byOAUesFPdvu85sXI0aEalryi5onbe_vnBE9ZPLOCfM-X01Y4VcOWu3n5XDYg"
